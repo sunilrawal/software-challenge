@@ -10,7 +10,9 @@ Imagine that Verve has just received a new advertising campaign from a national 
 
 Here’s what your web-based application must do:
 
-1. Your app must accept ( via a form ) a tab delimited file with the following columns: business name, address, city, state, postal code, country, latitude, longitude.  The example file is named offers_poi.tab is included in this repo.
+1. Your app must accept ( via a form ) a tab delimited file with the following columns: business
+name, address, city, state, postal code, country, latitude, longitude.  The example file is named
+offers_poi.tsv is included in this repo.
 2. Your app must parse the given file and store the information in a database.
 3. After upload, your application should display each location ordered by distance from the Verve Carlsbad office.
 4. (Bonus Points) Provide an api to query for locations near a given latitude and longitude.
