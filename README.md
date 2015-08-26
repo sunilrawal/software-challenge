@@ -40,4 +40,4 @@ Evaluation of your submission will be based on the following criteria.  Addition
 
 ## Submission
 
-After completing the challenge submit it to your Verve contact or jspooner[at]vervemobile.com
+After completing the challenge submit your fork to jspooner[at]vervemobile.com
