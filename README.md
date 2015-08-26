@@ -22,9 +22,9 @@ Build an iOS application that displays the users most visited locations.  Below 
 
 #### Bonus points for:
 
-• Being aesthetically pleasing and improving the mock
-• Using Google Maps
-• TDD/BDD
+* Being aesthetically pleasing and improving the mock
+* Using Google Maps
+* TDD/BDD
 
 Your application should be easy to set up and should run on Mac OS X.  It should not require any for-pay software.
 
