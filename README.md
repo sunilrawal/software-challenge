@@ -16,10 +16,6 @@ Build an iOS application that displays the users most visited locations.  Below 
 2. Display each location in a table showing the most visited locations at the top
 3. If the location is a business provide the business name
 
-#### Your application does not need to:
-
- 1. Have a custom design
-
 #### Bonus points for:
 
 * Being aesthetically pleasing and improving the mock
