@@ -32,7 +32,7 @@ Evaluation of your submission will be based on the following criteria.  Addition
 2. Was the reviewer able to run your project?
 3. Did you commit often?
 4. How accurate is the location data?
-5. How hard is your application on battery lift?
+5. How hard is your application on battery life?
 
 ## Submission
 
