@@ -7,7 +7,7 @@ To better assess a candidates development skills, we would like to provide the f
 
 Build an iOS application that displays the users most visited locations.  Below is a mock to get you started.
 
-![iOS Mock](//raw.githubusercontent.com/VerveWireless/software-challenge/mobile-challenge/iOS-mock-small.jpg)
+![iOS Mock](https://raw.githubusercontent.com/VerveWireless/software-challenge/mobile-challenge/iOS-mock-small.jpg)
 
 
 #### Here’s what your iOS application must do:
