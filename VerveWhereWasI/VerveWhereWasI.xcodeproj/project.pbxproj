@@ -15,6 +15,23 @@
 		1053B73F1B91699700B46717 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1053B73E1B91699700B46717 /* Images.xcassets */; };
 		1053B7421B91699700B46717 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1053B7401B91699700B46717 /* LaunchScreen.xib */; };
 		1053B74E1B91699700B46717 /* VerveWhereWasITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1053B74D1B91699700B46717 /* VerveWhereWasITests.m */; };
+		1053B75C1B916B3600B46717 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B75B1B916B3600B46717 /* GoogleMaps.framework */; };
+		1053B75F1B916B5900B46717 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1053B75E1B916B5900B46717 /* GoogleMaps.bundle */; };
+		1053B7611B916B7D00B46717 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B7601B916B7D00B46717 /* Accelerate.framework */; };
+		1053B7631B916B8200B46717 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B7621B916B8200B46717 /* CoreBluetooth.framework */; };
+		1053B7651B916B8A00B46717 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B7641B916B8A00B46717 /* SystemConfiguration.framework */; };
+		1053B7671B916B9100B46717 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B7661B916B9100B46717 /* QuartzCore.framework */; };
+		1053B7691B916B9900B46717 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B7681B916B9900B46717 /* OpenGLES.framework */; };
+		1053B76B1B916BA200B46717 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B76A1B916BA200B46717 /* libz.dylib */; };
+		1053B76D1B916BAE00B46717 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B76C1B916BAE00B46717 /* libicucore.dylib */; };
+		1053B76F1B916BB700B46717 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B76E1B916BB700B46717 /* libc++.dylib */; };
+		1053B7711B916BBE00B46717 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B7701B916BBE00B46717 /* GLKit.framework */; };
+		1053B7731B916BC600B46717 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B7721B916BC600B46717 /* CoreText.framework */; };
+		1053B7751B916BCC00B46717 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B7741B916BCC00B46717 /* CoreLocation.framework */; };
+		1053B7771B916BD300B46717 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B7761B916BD300B46717 /* CoreData.framework */; };
+		1053B7791B916BD900B46717 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B7781B916BD900B46717 /* AVFoundation.framework */; };
+		1053B77B1B916BE400B46717 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B77A1B916BE400B46717 /* ImageIO.framework */; };
+		1053B77D1B916BEA00B46717 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B77C1B916BEA00B46717 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +59,23 @@
 		1053B7471B91699700B46717 /* VerveWhereWasITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VerveWhereWasITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1053B74C1B91699700B46717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1053B74D1B91699700B46717 /* VerveWhereWasITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerveWhereWasITests.m; sourceTree = "<group>"; };
+		1053B75B1B916B3600B46717 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		1053B75E1B916B5900B46717 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		1053B7601B916B7D00B46717 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		1053B7621B916B8200B46717 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		1053B7641B916B8A00B46717 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1053B7661B916B9100B46717 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1053B7681B916B9900B46717 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1053B76A1B916BA200B46717 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1053B76C1B916BAE00B46717 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		1053B76E1B916BB700B46717 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		1053B7701B916BBE00B46717 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		1053B7721B916BC600B46717 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		1053B7741B916BCC00B46717 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1053B7761B916BD300B46717 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1053B7781B916BD900B46717 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1053B77A1B916BE400B46717 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		1053B77C1B916BEA00B46717 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +83,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1053B77D1B916BEA00B46717 /* Foundation.framework in Frameworks */,
+				1053B77B1B916BE400B46717 /* ImageIO.framework in Frameworks */,
+				1053B7791B916BD900B46717 /* AVFoundation.framework in Frameworks */,
+				1053B7771B916BD300B46717 /* CoreData.framework in Frameworks */,
+				1053B7751B916BCC00B46717 /* CoreLocation.framework in Frameworks */,
+				1053B7731B916BC600B46717 /* CoreText.framework in Frameworks */,
+				1053B7711B916BBE00B46717 /* GLKit.framework in Frameworks */,
+				1053B76F1B916BB700B46717 /* libc++.dylib in Frameworks */,
+				1053B76D1B916BAE00B46717 /* libicucore.dylib in Frameworks */,
+				1053B76B1B916BA200B46717 /* libz.dylib in Frameworks */,
+				1053B7691B916B9900B46717 /* OpenGLES.framework in Frameworks */,
+				1053B7671B916B9100B46717 /* QuartzCore.framework in Frameworks */,
+				1053B7651B916B8A00B46717 /* SystemConfiguration.framework in Frameworks */,
+				1053B7631B916B8200B46717 /* CoreBluetooth.framework in Frameworks */,
+				1053B7611B916B7D00B46717 /* Accelerate.framework in Frameworks */,
+				1053B75C1B916B3600B46717 /* GoogleMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,14 +133,16 @@
 		1053B72D1B91699700B46717 /* VerveWhereWasI */ = {
 			isa = PBXGroup;
 			children = (
+				1053B75D1B916B4C00B46717 /* 3rdParty */,
+				1053B75A1B916B2200B46717 /* Frameworks */,
+				1053B7591B916A4800B46717 /* CoreData */,
+				1053B7581B916A2E00B46717 /* Views */,
+				1053B7571B916A2300B46717 /* ViewControllers */,
 				1053B7321B91699700B46717 /* AppDelegate.h */,
 				1053B7331B91699700B46717 /* AppDelegate.m */,
-				1053B7381B91699700B46717 /* ViewController.h */,
-				1053B7391B91699700B46717 /* ViewController.m */,
 				1053B73B1B91699700B46717 /* Main.storyboard */,
 				1053B73E1B91699700B46717 /* Images.xcassets */,
 				1053B7401B91699700B46717 /* LaunchScreen.xib */,
-				1053B7351B91699700B46717 /* VerveWhereWasI.xcdatamodeld */,
 				1053B72E1B91699700B46717 /* Supporting Files */,
 			);
 			path = VerveWhereWasI;
@@ -120,6 +172,61 @@
 				1053B74C1B91699700B46717 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1053B7571B916A2300B46717 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1053B7381B91699700B46717 /* ViewController.h */,
+				1053B7391B91699700B46717 /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1053B7581B916A2E00B46717 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1053B7591B916A4800B46717 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1053B7351B91699700B46717 /* VerveWhereWasI.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		1053B75A1B916B2200B46717 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1053B77C1B916BEA00B46717 /* Foundation.framework */,
+				1053B77A1B916BE400B46717 /* ImageIO.framework */,
+				1053B7781B916BD900B46717 /* AVFoundation.framework */,
+				1053B7761B916BD300B46717 /* CoreData.framework */,
+				1053B7741B916BCC00B46717 /* CoreLocation.framework */,
+				1053B7721B916BC600B46717 /* CoreText.framework */,
+				1053B7701B916BBE00B46717 /* GLKit.framework */,
+				1053B76E1B916BB700B46717 /* libc++.dylib */,
+				1053B76C1B916BAE00B46717 /* libicucore.dylib */,
+				1053B76A1B916BA200B46717 /* libz.dylib */,
+				1053B7681B916B9900B46717 /* OpenGLES.framework */,
+				1053B7661B916B9100B46717 /* QuartzCore.framework */,
+				1053B7641B916B8A00B46717 /* SystemConfiguration.framework */,
+				1053B7621B916B8200B46717 /* CoreBluetooth.framework */,
+				1053B7601B916B7D00B46717 /* Accelerate.framework */,
+				1053B75B1B916B3600B46717 /* GoogleMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1053B75D1B916B4C00B46717 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				1053B75E1B916B5900B46717 /* GoogleMaps.bundle */,
+			);
+			name = 3rdParty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +312,7 @@
 				1053B73D1B91699700B46717 /* Main.storyboard in Resources */,
 				1053B7421B91699700B46717 /* LaunchScreen.xib in Resources */,
 				1053B73F1B91699700B46717 /* Images.xcassets in Resources */,
+				1053B75F1B916B5900B46717 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +459,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VerveWhereWasI",
+				);
 				INFOPLIST_FILE = VerveWhereWasI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +473,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VerveWhereWasI",
+				);
 				INFOPLIST_FILE = VerveWhereWasI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
