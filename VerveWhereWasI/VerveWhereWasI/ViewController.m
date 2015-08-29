@@ -11,7 +11,7 @@
 #import "UserLocation.h"
 #import "DBManager.h"
 #import <GoogleMaps/GoogleMaps.h>
-
+#import "UserLocation+Icons.h"
 
 @interface ViewController ()
 
@@ -70,7 +70,9 @@
     userLocations = [NSArray arrayWithArray:locs];
 }
 
+
 #pragma mark - locations selected
+
 -(void)locationSelected:(NSNotification*)note
 {
     [self assignStatusText:UserLocationFound];
@@ -89,6 +91,7 @@
     {
         userLocation.businessName = place.name;
         userLocation.address = place.formattedAddress;
+        userLocation.placeTypes = [place.types componentsJoinedByString:@","];
     }
     
     userLocation.latitude = @(coordinate.latitude);
@@ -149,6 +152,10 @@
     
     UILabel* countLabel = (UILabel*)[cell viewWithTag:3];
     countLabel.text = [NSString stringWithFormat:@"%@", ul.count];
+    
+    UIImageView* iv = (UIImageView*)[cell viewWithTag:1];
+    iv.image = [ul iconForType];
+    
 }
 
 @end

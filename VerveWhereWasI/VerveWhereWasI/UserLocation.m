@@ -21,6 +21,7 @@
 @dynamic businessName;
 @dynamic count;
 @dynamic groupingKey;
+@dynamic placeTypes;
 
 +(NSArray*)allLocations
 {
@@ -51,7 +52,7 @@
 -(NSString *)formattedLocation
 {
     if (!self.businessName && !self.address)
-        return [NSString stringWithFormat:@"%0.6f, %0.6f", self.latitude.doubleValue, self.longitude.doubleValue];
+        return [NSString stringWithFormat:@"Unknown place\n%0.6f, %0.6f", self.latitude.doubleValue, self.longitude.doubleValue];
  
     if (!self.businessName)
         return self.address;

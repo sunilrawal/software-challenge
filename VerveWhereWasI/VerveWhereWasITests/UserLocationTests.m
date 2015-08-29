@@ -44,7 +44,7 @@
     double longitude = 987.654321;
     ul1.latitude = @(latitude);
     ul1.longitude = @(longitude);
-    NSString* expected = [NSString stringWithFormat:@"%0.6f, %0.6f", latitude, longitude];
+    NSString* expected = [NSString stringWithFormat:@"Unknown place\n%0.6f, %0.6f", latitude, longitude];
     XCTAssertTrue([ul1.formattedLocation isEqualToString:expected]);
     
     ul1.address = @"ADDRESS";

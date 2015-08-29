@@ -24,11 +24,13 @@ typedef enum {
 @property (nonatomic, retain) NSString * businessName;
 @property (nonatomic, retain) NSNumber * count;
 @property (nonatomic, retain) NSString * groupingKey;
+@property (nonatomic, retain) NSString* placeTypes;
 
 @property (readonly) NSString* uniqueKeyForGrouping;
 @property (readonly) NSString* formattedLocation;
 
 -(void)save;
+
 +(UserLocation*)create;
 +(NSArray*)allLocations;
 
