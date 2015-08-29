@@ -14,7 +14,6 @@
 		1053B73D1B91699700B46717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1053B73B1B91699700B46717 /* Main.storyboard */; };
 		1053B73F1B91699700B46717 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1053B73E1B91699700B46717 /* Images.xcassets */; };
 		1053B7421B91699700B46717 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1053B7401B91699700B46717 /* LaunchScreen.xib */; };
-		1053B74E1B91699700B46717 /* VerveWhereWasITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1053B74D1B91699700B46717 /* VerveWhereWasITests.m */; };
 		1053B75C1B916B3600B46717 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B75B1B916B3600B46717 /* GoogleMaps.framework */; };
 		1053B75F1B916B5900B46717 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1053B75E1B916B5900B46717 /* GoogleMaps.bundle */; };
 		1053B7611B916B7D00B46717 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1053B7601B916B7D00B46717 /* Accelerate.framework */; };
@@ -51,6 +50,7 @@
 		1053B7A41B91777B00B46717 /* UserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1053B7A31B91777B00B46717 /* UserLocation.m */; };
 		1053B7A71B91779900B46717 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1053B7A61B91779900B46717 /* DBManager.m */; };
 		1053B7A91B917A5600B46717 /* launch-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1053B7A81B917A5600B46717 /* launch-background.png */; };
+		1053B7AC1B91825E00B46717 /* UserLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1053B7AB1B91825E00B46717 /* UserLocationTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +77,6 @@
 		1053B7411B91699700B46717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1053B7471B91699700B46717 /* VerveWhereWasITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VerveWhereWasITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1053B74C1B91699700B46717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1053B74D1B91699700B46717 /* VerveWhereWasITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerveWhereWasITests.m; sourceTree = "<group>"; };
 		1053B75B1B916B3600B46717 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		1053B75E1B916B5900B46717 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
 		1053B7601B916B7D00B46717 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -119,6 +118,7 @@
 		1053B7A61B91779900B46717 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		1053B7A81B917A5600B46717 /* launch-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-background.png"; sourceTree = "<group>"; };
 		1053B7AA1B917DD600B46717 /* PermissionsViewHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionsViewHandler.h; sourceTree = "<group>"; };
+		1053B7AB1B91825E00B46717 /* UserLocationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +205,7 @@
 		1053B74A1B91699700B46717 /* VerveWhereWasITests */ = {
 			isa = PBXGroup;
 			children = (
-				1053B74D1B91699700B46717 /* VerveWhereWasITests.m */,
+				1053B7AB1B91825E00B46717 /* UserLocationTests.m */,
 				1053B74B1B91699700B46717 /* Supporting Files */,
 			);
 			path = VerveWhereWasITests;
@@ -443,7 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1053B74E1B91699700B46717 /* VerveWhereWasITests.m in Sources */,
+				1053B7AC1B91825E00B46717 /* UserLocationTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,6 +25,9 @@ typedef enum {
 @property (nonatomic, retain) NSNumber * count;
 @property (nonatomic, retain) NSString * groupingKey;
 
+@property (readonly) NSString* uniqueKeyForGrouping;
+@property (readonly) NSString* formattedLocation;
+
 -(void)save;
 +(UserLocation*)create;
 +(NSArray*)allLocations;

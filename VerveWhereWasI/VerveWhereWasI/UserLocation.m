@@ -36,4 +36,20 @@
     [[DBManager shared] saveContext];
 }
 
+-(NSString*)uniqueKeyForGrouping
+{
+    return [NSString stringWithFormat:@"%@;%@", self.businessName, self.address];
+}
+
+-(NSString *)formattedLocation
+{
+    if (!self.businessName && !self.address)
+        return [NSString stringWithFormat:@"%0.6f, %0.6f", self.latitude.doubleValue, self.longitude.doubleValue];
+ 
+    if (!self.businessName)
+        return self.address;
+    
+    return [NSString stringWithFormat:@"%@\n%@", self.businessName, self.address];
+}
+
 @end

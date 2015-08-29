@@ -9,7 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
+#define LOCATION_SELECTED_NOTIFICATION @"LocationSelected"
+
 @interface VerveLocationManager : NSObject <CLLocationManagerDelegate>
+
+@property (nonatomic, strong) CLLocation* lastRecordedLocation;
 
 +(VerveLocationManager *)shared;
 -(void)startUpdating;

@@ -85,6 +85,8 @@
     {
         NSLog(@"Location close enough");
         [self stopUpdating];
+        self.lastRecordedLocation = location;
+        
         [self showPlacePickerForLocation:location];
     }
     else
@@ -112,9 +114,12 @@
             return;
         }
         
-        // do something with the place which was chosen [could be nil]
+        if (place == nil)
+        {
+            
+        }
         
-        
+        [[NSNotificationCenter defaultCenter] postNotificationName:LOCATION_SELECTED_NOTIFICATION object:place];
     }];
 }
 
