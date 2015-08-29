@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+typedef enum {
+    UserLocationUpdating,
+    UserLocationMultiple,
+    UserLocationFound
+} UserLocationStatus;
 
 @interface UserLocation : NSManagedObject
 

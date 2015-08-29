@@ -118,6 +118,7 @@
 		1053B7A51B91779900B46717 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		1053B7A61B91779900B46717 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		1053B7A81B917A5600B46717 /* launch-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-background.png"; sourceTree = "<group>"; };
+		1053B7AA1B917DD600B46717 /* PermissionsViewHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionsViewHandler.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +224,7 @@
 			children = (
 				1053B7381B91699700B46717 /* ViewController.h */,
 				1053B7391B91699700B46717 /* ViewController.m */,
+				1053B7AA1B917DD600B46717 /* PermissionsViewHandler.h */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -565,6 +567,7 @@
 				);
 				INFOPLIST_FILE = VerveWhereWasI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -579,6 +582,7 @@
 				);
 				INFOPLIST_FILE = VerveWhereWasI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

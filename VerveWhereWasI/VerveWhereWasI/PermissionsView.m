@@ -36,7 +36,7 @@
     if (status == kCLAuthorizationStatusAuthorizedWhenInUse)
     {
         locationManager.delegate = nil;
-        [self removeFromSuperview];
+        if (self.handler) [self.handler permissionsViewClosed];
     }
 }
 @end

@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "PermissionsViewHandler.h"
 
 @interface PermissionsView : UIView <CLLocationManagerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIButton *okButton;
+@property (strong, nonatomic) id<PermissionsViewHandler> handler;
 
 @end
