@@ -48,6 +48,9 @@
 		1053B79C1B91721200B46717 /* PermissionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1053B79B1B91721200B46717 /* PermissionsView.xib */; };
 		1053B79E1B9172C400B46717 /* verve_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1053B79D1B9172C400B46717 /* verve_logo.png */; };
 		1053B7A11B9173C800B46717 /* PermissionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1053B7A01B9173C800B46717 /* PermissionsView.m */; };
+		1053B7A41B91777B00B46717 /* UserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1053B7A31B91777B00B46717 /* UserLocation.m */; };
+		1053B7A71B91779900B46717 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1053B7A61B91779900B46717 /* DBManager.m */; };
+		1053B7A91B917A5600B46717 /* launch-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1053B7A81B917A5600B46717 /* launch-background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +113,11 @@
 		1053B79D1B9172C400B46717 /* verve_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = verve_logo.png; sourceTree = "<group>"; };
 		1053B79F1B9173C800B46717 /* PermissionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionsView.h; sourceTree = "<group>"; };
 		1053B7A01B9173C800B46717 /* PermissionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionsView.m; sourceTree = "<group>"; };
+		1053B7A21B91777B00B46717 /* UserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocation.h; sourceTree = "<group>"; };
+		1053B7A31B91777B00B46717 /* UserLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocation.m; sourceTree = "<group>"; };
+		1053B7A51B91779900B46717 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		1053B7A61B91779900B46717 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		1053B7A81B917A5600B46717 /* launch-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-background.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +241,10 @@
 			isa = PBXGroup;
 			children = (
 				1053B7351B91699700B46717 /* VerveWhereWasI.xcdatamodeld */,
+				1053B7A21B91777B00B46717 /* UserLocation.h */,
+				1053B7A31B91777B00B46717 /* UserLocation.m */,
+				1053B7A51B91779900B46717 /* DBManager.h */,
+				1053B7A61B91779900B46717 /* DBManager.m */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -271,6 +283,7 @@
 		1053B77E1B916F1700B46717 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1053B7A81B917A5600B46717 /* launch-background.png */,
 				1053B79D1B9172C400B46717 /* verve_logo.png */,
 				1053B77F1B916F1700B46717 /* Icon-1024.png */,
 				1053B7801B916F1700B46717 /* Icon-29.png */,
@@ -390,6 +403,7 @@
 				1053B79C1B91721200B46717 /* PermissionsView.xib in Resources */,
 				1053B7931B916F1700B46717 /* Icon-60@3x.png in Resources */,
 				1053B7901B916F1700B46717 /* Icon-40@2x.png in Resources */,
+				1053B7A91B917A5600B46717 /* launch-background.png in Resources */,
 				1053B7911B916F1700B46717 /* Icon-40@3x.png in Resources */,
 				1053B7951B916F1700B46717 /* Icon-76@2x.png in Resources */,
 				1053B79E1B9172C400B46717 /* verve_logo.png in Resources */,
@@ -414,10 +428,12 @@
 			files = (
 				1053B7341B91699700B46717 /* AppDelegate.m in Sources */,
 				1053B7A11B9173C800B46717 /* PermissionsView.m in Sources */,
+				1053B7A41B91777B00B46717 /* UserLocation.m in Sources */,
 				1053B79A1B916F6F00B46717 /* VerveLocationManager.m in Sources */,
 				1053B7371B91699700B46717 /* VerveWhereWasI.xcdatamodeld in Sources */,
 				1053B73A1B91699700B46717 /* ViewController.m in Sources */,
 				1053B7311B91699700B46717 /* main.m in Sources */,
+				1053B7A71B91779900B46717 /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

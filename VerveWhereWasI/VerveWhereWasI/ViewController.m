@@ -18,7 +18,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     self.permissionsView.hidden = [VerveLocationManager shared].isAvailable;
 }
 

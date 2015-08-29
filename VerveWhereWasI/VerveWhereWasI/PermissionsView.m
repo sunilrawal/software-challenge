@@ -27,6 +27,7 @@
 - (IBAction)okButtonClicked:(id)sender
 {
     locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
     [locationManager requestWhenInUseAuthorization];
 }
 
@@ -34,6 +35,7 @@
 {
     if (status == kCLAuthorizationStatusAuthorizedWhenInUse)
     {
+        locationManager.delegate = nil;
         [self removeFromSuperview];
     }
 }

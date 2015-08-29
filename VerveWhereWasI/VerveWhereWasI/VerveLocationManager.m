@@ -40,14 +40,18 @@
 -(instancetype)init
 {
     self = [super init];
-    locationManager = [[CLLocationManager alloc] init];
-    locationManager.delegate = self;
-    locationManager.desiredAccuracy = MIN_HORIZONTAL_ACCURACY;
     return self;
 }
 
 -(void)startUpdating
 {
+    if (!locationManager)
+    {
+        locationManager = [[CLLocationManager alloc] init];
+        locationManager.delegate = self;
+        locationManager.desiredAccuracy = MIN_HORIZONTAL_ACCURACY;
+    }
+    
     if (![self isAvailable])
     {
         [locationManager requestWhenInUseAuthorization];
@@ -77,16 +81,16 @@
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     CLLocation* location = locations.lastObject;
-//    if (location.horizontalAccuracy <= MIN_HORIZONTAL_ACCURACY || -[locationUpdateStarted timeIntervalSinceNow] > MAX_UPDATE_TIME)
-//    {
-//        NSLog(@"Location close enough");
-//        [self stopUpdating];
-//        [self showPlacePickerForLocation:location];
-//    }
-//    else
-//    {
-//        NSLog(@"Location recorded %0.4f %0.4f, accuracy %0.2f", location.coordinate.latitude, location.coordinate.longitude, location.horizontalAccuracy);
-//    }
+    if (location.horizontalAccuracy <= MIN_HORIZONTAL_ACCURACY || -[locationUpdateStarted timeIntervalSinceNow] > MAX_UPDATE_TIME)
+    {
+        NSLog(@"Location close enough");
+        [self stopUpdating];
+        [self showPlacePickerForLocation:location];
+    }
+    else
+    {
+        NSLog(@"Location recorded %0.4f %0.4f, accuracy %0.2f", location.coordinate.latitude, location.coordinate.longitude, location.horizontalAccuracy);
+    }
 }
 
 #pragma mark - google places interface
