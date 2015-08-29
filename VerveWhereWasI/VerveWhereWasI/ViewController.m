@@ -26,19 +26,20 @@
     [super viewDidLoad];
     self.permissionsView.handler = self;
     self.permissionsView.hidden = [VerveLocationManager shared].isAvailable;
-    userLocations = [UserLocation allLocations];
+    [self loadAllLocations];
     [self assignStatusText:UserLocationUpdating];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationSelected:) name:LOCATION_SELECTED_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
 }
 
--(void)viewDidAppear:(BOOL)animated
-{
-    if ([VerveLocationManager shared].isAvailable)
-    {
-        [self permissionsViewClosed];
-    }
-}
+//-(void)viewDidAppear:(BOOL)animated
+//{
+//    if ([VerveLocationManager shared].isAvailable)
+//    {
+//        [self permissionsViewClosed];
+//    }
+//}
 
 -(void)permissionsViewClosed
 {
@@ -46,6 +47,27 @@
     // everything is taken care of -- location permissions are 'ok'.
     // can now start location tracking
     [[VerveLocationManager shared] startUpdating];
+}
+
+
+-(void)appDidBecomeActive
+{
+    if ([VerveLocationManager shared].isAvailable)
+    {
+        [self permissionsViewClosed];
+    }
+}
+
+-(void)loadAllLocations
+{
+    NSMutableArray* locs = [UserLocation allLocations].mutableCopy;
+    [locs sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        UserLocation* ul1 = obj1;
+        UserLocation* ul2 = obj2;
+        return [ul2.count compare:ul1.count];
+    }];
+    
+    userLocations = [NSArray arrayWithArray:locs];
 }
 
 #pragma mark - locations selected
@@ -73,7 +95,7 @@
     userLocation.longitude = @(coordinate.longitude);
     [userLocation save];
     
-    userLocations = [UserLocation allLocations];
+    [self loadAllLocations];
     [self.locationsTable reloadData];
 }
 

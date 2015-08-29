@@ -10,6 +10,7 @@
 #import "DBManager.h"
 
 #define TABLE_NAME @"UserLocation"
+#define GROUPING_KEY_COLUMN_NAME @"groupingKey"
 
 @implementation UserLocation
 
@@ -33,6 +34,12 @@
 
 -(void)save
 {
+    UserLocation* ul = (UserLocation*)[[DBManager shared] fetchEntity:TABLE_NAME withColumn:GROUPING_KEY_COLUMN_NAME havingValue:self.uniqueKeyForGrouping];
+    int count = ul ? ul.count.intValue + 1 : 1;
+    self.count = @(count);
+    self.groupingKey = self.uniqueKeyForGrouping;
+    self.timeRecorded = [NSDate date];
+    if (ul) [[DBManager shared] remove:ul];
     [[DBManager shared] saveContext];
 }
 
