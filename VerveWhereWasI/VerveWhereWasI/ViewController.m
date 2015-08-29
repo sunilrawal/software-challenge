@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "VerveLocationManager.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.permissionsView.hidden = [VerveLocationManager shared].isAvailable;
 }
 
 #pragma mark - location table

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PermissionsView.h"
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *locationsTable;
+@property (weak, nonatomic) IBOutlet PermissionsView *permissionsView;
 
 @end
 

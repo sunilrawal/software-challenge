@@ -53,11 +53,17 @@ Address</string>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="8ga-SR-33J"/>
                                 </connections>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" id="cJy-4E-ttC" customClass="PermissionsView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="locationsTable" destination="FeQ-OZ-FUl" id="KWn-0r-UiK"/>
+                        <outlet property="permissionsView" destination="cJy-4E-ttC" id="lik-0c-gbi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

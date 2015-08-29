@@ -44,7 +44,10 @@
 		1053B7941B916F1700B46717 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 1053B7881B916F1700B46717 /* Icon-76.png */; };
 		1053B7951B916F1700B46717 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1053B7891B916F1700B46717 /* Icon-76@2x.png */; };
 		1053B7961B916F1700B46717 /* icon-resize.sh in Resources */ = {isa = PBXBuildFile; fileRef = 1053B78A1B916F1700B46717 /* icon-resize.sh */; };
-		1053B79A1B916F6F00B46717 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1053B7991B916F6F00B46717 /* LocationManager.m */; };
+		1053B79A1B916F6F00B46717 /* VerveLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1053B7991B916F6F00B46717 /* VerveLocationManager.m */; };
+		1053B79C1B91721200B46717 /* PermissionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1053B79B1B91721200B46717 /* PermissionsView.xib */; };
+		1053B79E1B9172C400B46717 /* verve_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1053B79D1B9172C400B46717 /* verve_logo.png */; };
+		1053B7A11B9173C800B46717 /* PermissionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1053B7A01B9173C800B46717 /* PermissionsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,8 +104,12 @@
 		1053B7881B916F1700B46717 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
 		1053B7891B916F1700B46717 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
 		1053B78A1B916F1700B46717 /* icon-resize.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "icon-resize.sh"; sourceTree = "<group>"; };
-		1053B7981B916F6F00B46717 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
-		1053B7991B916F6F00B46717 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		1053B7981B916F6F00B46717 /* VerveLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerveLocationManager.h; sourceTree = "<group>"; };
+		1053B7991B916F6F00B46717 /* VerveLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerveLocationManager.m; sourceTree = "<group>"; };
+		1053B79B1B91721200B46717 /* PermissionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PermissionsView.xib; sourceTree = "<group>"; };
+		1053B79D1B9172C400B46717 /* verve_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = verve_logo.png; sourceTree = "<group>"; };
+		1053B79F1B9173C800B46717 /* PermissionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PermissionsView.h; sourceTree = "<group>"; };
+		1053B7A01B9173C800B46717 /* PermissionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PermissionsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +222,9 @@
 		1053B7581B916A2E00B46717 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1053B79B1B91721200B46717 /* PermissionsView.xib */,
+				1053B79F1B9173C800B46717 /* PermissionsView.h */,
+				1053B7A01B9173C800B46717 /* PermissionsView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -261,6 +271,7 @@
 		1053B77E1B916F1700B46717 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1053B79D1B9172C400B46717 /* verve_logo.png */,
 				1053B77F1B916F1700B46717 /* Icon-1024.png */,
 				1053B7801B916F1700B46717 /* Icon-29.png */,
 				1053B7811B916F1700B46717 /* Icon-29@2x.png */,
@@ -280,8 +291,8 @@
 		1053B7971B916F5400B46717 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				1053B7981B916F6F00B46717 /* LocationManager.h */,
-				1053B7991B916F6F00B46717 /* LocationManager.m */,
+				1053B7981B916F6F00B46717 /* VerveLocationManager.h */,
+				1053B7991B916F6F00B46717 /* VerveLocationManager.m */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
@@ -376,10 +387,12 @@
 				1053B75F1B916B5900B46717 /* GoogleMaps.bundle in Resources */,
 				1053B78C1B916F1700B46717 /* Icon-29.png in Resources */,
 				1053B78F1B916F1700B46717 /* Icon-40.png in Resources */,
+				1053B79C1B91721200B46717 /* PermissionsView.xib in Resources */,
 				1053B7931B916F1700B46717 /* Icon-60@3x.png in Resources */,
 				1053B7901B916F1700B46717 /* Icon-40@2x.png in Resources */,
 				1053B7911B916F1700B46717 /* Icon-40@3x.png in Resources */,
 				1053B7951B916F1700B46717 /* Icon-76@2x.png in Resources */,
+				1053B79E1B9172C400B46717 /* verve_logo.png in Resources */,
 				1053B7921B916F1700B46717 /* Icon-60@2x.png in Resources */,
 				1053B7961B916F1700B46717 /* icon-resize.sh in Resources */,
 			);
@@ -400,7 +413,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1053B7341B91699700B46717 /* AppDelegate.m in Sources */,
-				1053B79A1B916F6F00B46717 /* LocationManager.m in Sources */,
+				1053B7A11B9173C800B46717 /* PermissionsView.m in Sources */,
+				1053B79A1B916F6F00B46717 /* VerveLocationManager.m in Sources */,
 				1053B7371B91699700B46717 /* VerveWhereWasI.xcdatamodeld in Sources */,
 				1053B73A1B91699700B46717 /* ViewController.m in Sources */,
 				1053B7311B91699700B46717 /* main.m in Sources */,
