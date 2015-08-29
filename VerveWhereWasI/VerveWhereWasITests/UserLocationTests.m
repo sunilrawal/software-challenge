@@ -55,4 +55,13 @@
     XCTAssertTrue([ul1.formattedLocation isEqualToString:expected]);
 }
 
+// an annoying special case
+-(void)testFormattedLocationForSyntheticGeocode {
+    UserLocation* ul1 = [UserLocation create];
+    ul1.businessName = @"(123.45678901, 124.45678910)";
+    ul1.placeTypes = @"synthetic_geocode";
+    NSString* expected = [NSString stringWithFormat:@"Unknown place\n%@", ul1.businessName];
+    XCTAssertTrue([ul1.formattedLocation isEqualToString:expected]);
+}
+
 @end

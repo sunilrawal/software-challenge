@@ -19,6 +19,9 @@
     {
         NSArray *nibContents = [[NSBundle mainBundle] loadNibNamed:@"PermissionsView" owner:self options:nil];
         UIView* v = [nibContents objectAtIndex:0];
+        CGRect frame = v.frame;
+        frame.size = [UIScreen mainScreen].bounds.size;
+        v.frame = frame;
         [self addSubview:v];
     }
     return self;

@@ -51,9 +51,14 @@
 
 -(NSString *)formattedLocation
 {
+
+    
     if (!self.businessName && !self.address)
         return [NSString stringWithFormat:@"Unknown place\n%0.6f, %0.6f", self.latitude.doubleValue, self.longitude.doubleValue];
  
+    BOOL isSyntheticGeocode = self.businessName && self.businessName.length > 0 && [self.placeTypes containsString:@"synthetic_geocode"];
+    if (isSyntheticGeocode) return [NSString stringWithFormat:@"Unknown place\n%@", self.businessName];
+    
     if (!self.businessName)
         return self.address;
     

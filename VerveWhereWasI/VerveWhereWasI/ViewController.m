@@ -33,14 +33,6 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appDidBecomeActive) name:UIApplicationDidBecomeActiveNotification object:nil];
 }
 
-//-(void)viewDidAppear:(BOOL)animated
-//{
-//    if ([VerveLocationManager shared].isAvailable)
-//    {
-//        [self permissionsViewClosed];
-//    }
-//}
-
 -(void)permissionsViewClosed
 {
     [self.permissionsView removeFromSuperview];
@@ -117,13 +109,17 @@
             txt = @"Found multiple possible locations!";
             break;
         case UserLocationFound:
-            txt = @"You've been found!";
+            txt = @"Found! (tap to update)";
             break;
     }
     
     self.statusLabel.text = txt;
 }
 
+- (IBAction)topButtonClicked:(id)sender
+{
+    [[VerveLocationManager shared] startUpdating];
+}
 
 #pragma mark - location table
 
